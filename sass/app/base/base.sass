@@ -1,0 +1,47 @@
+html, body
+  font-family: $primaryEnglishFont
+  background: #c1f5ff
+
+body
+  overflow-x: hidden
+a, button
+  cursor: pointer
+#lottie
+  width: 100%
+  height: 100%
+  display: block
+  overflow: hidden
+  transform: translate3d(0, 0, 0)
+  text-align: center
+  opacity: 1
+
+.width90
+  width: 90%
+
+.popups
+  &::-webkit-scrollbar
+    width: 15px
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+    -os-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+    -o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+  &::-webkit-scrollbar-thumb
+    background-color: $lightText
+
+.preloader
+  margin: auto
+  position: absolute
+  top: 0px
+  bottom: 0px
+  left: 0px
+  right: 0px
+  width: 110px
+  height: 110px
+  border-radius: 200px
+  padding: 12px
+  text-align: center
+  font-size: 10px
+section, figure, footer
+  overflow: hidden

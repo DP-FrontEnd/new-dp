@@ -1,0 +1,10 @@
+.slideshow
+  z-index: 0
+  &__img
+    background-image: linear-gradient(to right bottom, rgba(24, 65, 150, 0.7), rgba(0, 152, 56, 0.7)), url(../images/slide.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%)
+  &__video
+    +centerBlock(0, 0, 0, 0, auto)

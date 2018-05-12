@@ -1,0 +1,25 @@
+.about
+  @extend .width90
+  &__title
+    font-family: $scondaryEnglishFont
+    color: $thirdPrimaryColor
+    background-image: url("../images/services-icon.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    & span
+      font-size: 23px
+.about-us
+  & .about__title:not(.first-title)
+    color: #1D8348 !important
+    background: none !important
+  & .first-title
+    background-image: url("../images/about.png") !important
+.video-gallery
+  background: linear-gradient(to right bottom, #184196, #009838)
+.sample-line:first-child
+  color: #FFF
+.sample-line
+  color: #900944
+
+

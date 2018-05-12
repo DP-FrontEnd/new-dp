@@ -1,0 +1,51 @@
+.about__title, .portifolio__title, .team__title, .footer__title
+  opacity: 0
+  +transformScale(1.3)
+  +transition(.2s, all, $slowAtEnd)
+
+.about__desc
+  +transformTranslate(0, 100px)
+  +transition(.5s, all, $slowAtStartEnd)
+  opacity: 0
+.figureanimate
+  & figcaption:first-of-type
+    +transformTranslate(100%, 0)
+    opacity: 0
+    +transition(.5s, all, $slowAtStartEnd)
+  & figcaption:last-of-type
+    +transformTranslate(-100%, 0)
+    opacity: 0
+    +transition(.5s, all, $slowAtStartEnd)
+  & .services__img, .additional__services__img,
+    +transformScale(1.3)
+    opacity: 0
+    +transition(.7s, all, cubic-bezier(0.52, -0.07, 0.18, 1.27))
+    transition-delay: .6s
+  & figcaption
+    & .services__btn, .services__title, .additional__services__title
+      transition-delay: .9s
+      +transformScale(1.3)
+      opacity: 0
+      +transition(.7s, all, cubic-bezier(0.52, -0.07, 0.18, 1.27))
+    & .services__btn
+      +transformRotate(360deg)
+      transition-delay: 1.1s
+
+
+.animate
+  & .about__title, .portifolio__title, .team__title, .footer__title
+    +transformScale(1)
+    opacity: 1
+  & .about__desc
+    opacity: 1
+    +transformTranslate(0, 0)
+.figureanimate.animate figcaption
+  +transformTranslate(0,0)
+  opacity: 1 !important
+  & .services__img, .additional__services__img, .services__title, .services__btn, .additional__services__title
+    +transformScale(1)
+    opacity: 1
+    +transformRotate(0deg)
+
+
+

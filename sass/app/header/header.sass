@@ -1,0 +1,160 @@
+.translate_h
+  color: $firstBtncolor
+  font-family: $scondaryEnglishFont
+.menuNav
+  position: fixed
+  right: 15px
+  top: 15px
+  display: none
+  text-align: center
+  z-index: 1000
+.menuNav ul.header__lists
+  position: absolute
+  width: 0
+  visibility: hidden
+  right: 1px
+  top: 4px
+  height: 52px
+  overflow: hidden
+  margin: 0 !important
+  +transition(.3s, all, $slowAtEnd)
+  & li
+    opacity: 0
+    transition-delay: .3s
+    +transition(.3s, all, $slowAtEnd)
+.menuicon
+  width: 60px
+  height: 60px
+  border-radius: 60px
+  background-color: $firstBtncolor
+  z-index: 1
+  cursor: pointer
+  position: relative
+  box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.66) !important
+  & img
+    height: 30px
+    position: absolute
+    right: 15px
+    +transition(.2s, all, $slowAtEnd)
+    margin-top: 15px
+.openmenu
+  +transformScale(1)
+.closemenu
+  +transformScale(0)
+.showmenuicon
+  & .closemenu
+    +transformScale(1)
+  & .openmenu
+    +transformScale(0)
+.menuClick
+  visibility: visible !important
+  width: 535px !important
+  & li
+    opacity: 1 !important
+.header
+  z-index: 200
+  &__logo
+    &__img
+      position: fixed
+      z-index: 100000
+  &__nav
+  &__navbar
+  &__lists
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(6, 6, 6, 0.6))
+    +corners(100px)
+    padding: 5px 15px
+  &__list
+  &__anchor
+    color: $lightText
+    &:hover
+      transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1) !important
+      color: #fff064
+.activepopups
+  display: block !important
+  animation-name: popups
+  -webkit-animation-name: popups
+  -moz-animation-name: popups
+  -ms-animation-name: popups
+  -o-animation-name: popups
+  animation-delay: .2s
+  -webkit-animation-delay: .2s
+  -moz-animation-delay: .2s
+  -ms-animation-delay: .2s
+  -o-animation-delay: .2s
+  animation-duration: .3s
+  -webkit-animation-duration: .3s
+  -moz-animation-duration: .3s
+  -ms-animation-duration: .3s
+  -o-animation-duration: .3s
+  visibility: hidden
+  animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  -ms-animation-fill-mode: forwards
+  -o-animation-fill-mode: forwards
+  animation-timing-function: ease-in
+  -webkit-animation-timing-function: ease-in
+  -moz-animation-timing-function: ease-in
+  -ms-animation-timing-function: ease-in
+  -o-animation-timing-function: ease-in
+
+@keyframes popups
+  0%
+    opacity: 0
+    visibility: hidden
+  100%
+    opacity: 1
+    visibility: visible
+
+.popups
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  display: none
+  margin: auto
+  position: fixed
+  z-index: 2000
+  background-color: rgba(0, 0, 0, 0.94)
+  overflow-y: scroll
+  z-index: 1000
+  &__close
+    z-index: 10000
+    & img
+      height: 30px
+      padding: 5px
+      +corners(50px)
+      cursor: pointer
+      background: rgba(0, 0, 0, 0.94)
+  & .subscribe__containers__title
+    background-color: transparent
+  &__line
+    border-top: 3px solid $lightText
+    margin: 0px auto
+    padding-bottom: 19px
+    width: 50px
+  &__list ul
+    border: 2px solid $lightText
+  &__list li:hover
+    background-color: #212121
+  &__list a
+    +corners(0 !important)
+    color: $white
+  &__active
+    background-color: $lightText !important
+  &__student, &__professional, &__signing, &__reset-password
+    background-color: $white
+    &:before
+      content: ''
+      float: left
+      margin-top: -54px
+      border-top: 15px solid transparent
+      border-left: 15px solid transparent
+      border-bottom: 15px solid $white
+      border-right: 15px solid transparent
+  &__professional
+    display: none
+    &:before
+      float: right
+  &__signing:before, &__reset-password:before
+    display: none

@@ -1,0 +1,74 @@
+.mute-video {
+	background: url(../images/mute.png) no-repeat center;
+	background-size: 32px;
+	border: 0;
+	position: absolute;
+	bottom: 0;
+	right: 5px;
+	width: 32px;
+	height: 32px;
+	text-indent: -999px;
+}
+.unmute-video {
+	background: url(../images/unmute.png) no-repeat center;
+	background-size: 32px;
+}
+.ms-partialview-template {
+	overflow: hidden;
+	min-height: 570px;
+}
+.ms-partialview-template .ms-view {
+	overflow: visible;
+	background-color: transparent;
+}
+
+.ms-partialview-template .ms-slide {
+	
+}
+
+.ms-partialview-template .ms-caro3d-template {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 40px 15%;
+}
+
+.ms-partialview-template .ms-slide-info {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.ms-partialview-template .ms-slide-info h3 {
+	margin: 0px;
+	font-size: 23pt;
+	font-family: Bowlby One SC;
+	color: #1D8348;
+}
+
+.ms-partialview-template .ms-slide-info h4 {
+	font-weight: 500;
+	font-size: 14pt;
+	color: #7A7A7A;
+}
+
+.ms-partialview-template .ms-slide-info p {
+	font-size: medium;
+}	
+
+/* Layers */
+.ms-layer.video-title {
+    color: white;
+    font-weight: 600;
+    font-size: 42px;
+    margin:0px;
+    letter-spacing:0px;
+}
+
+.ms-layer.video-title.video-top-title {
+    font-size: 16px;
+    color: gray;
+}
+
+.ms-layer.video-title.video-sub-title {
+    font-size: 22px;
+    font-weight: 300;
+}

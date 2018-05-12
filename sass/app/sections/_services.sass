@@ -1,0 +1,34 @@
+.services
+  background: linear-gradient(to right bottom, rgba(24, 65, 150, 1), rgba(0, 152, 56, 1))
+  clip-path: polygon(0 0, 100% 200px, 100% 100%, 0 100%)
+  margin-top: -350px !important
+  z-index: 0
+  height: 1100px
+  &__container
+    z-index: 100
+  &__serv
+    & article
+      background: #FFF
+      height: auto
+      +corners(15px)
+    & img
+      width: 100%
+  &__title
+    color: $thirdPrimaryColor
+  &__btn
+    color: #FFF
+    background-color: $firstBtncolor
+    border: 0
+    cursor: pointer
+    +corners(100px)
+  & .additional__services
+    margin-top: 390px !important
+    & article
+      +corners(15px)
+      +border(2px, 2px, 2px, 2px, $firstSecondaryColor, solid)
+    & img
+      width: 100%
+    &__title
+      color: $firstSecondaryColor
+    &__desc
+      color: $firstSecondaryColor
